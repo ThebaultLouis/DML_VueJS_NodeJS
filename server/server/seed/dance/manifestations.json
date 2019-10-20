@@ -1,0 +1,561 @@
+[{
+        "domicile": 1,
+        "date": "27/07/2019",
+        "club": "Country en Retz",
+        "ville": "Saint Viaud",
+        "cp": 44,
+        "pdf_affiche": "affiche Saint Viaud.pdf",
+        "pdf_playliste": "saint viaud1.pdf",
+        "texte": ""
+    },
+    {
+        "domicile": 1,
+        "date": "29/09/2019",
+        "club": "Jo's American Car \"Route 177",
+        "ville": "Pont Réan",
+        "cp": 35,
+        "pdf_affiche": "route177.pdf",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 1,
+        "date": "09/11/2019",
+        "club": "Vaincre La mucoviscidose",
+        "ville": "Pléchatel",
+        "cp": 35,
+        "pdf_affiche": "Pléchatel.pdf",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 1,
+        "date": "03/08/2019",
+        "club": "Sealand",
+        "ville": "Saint Pair sur mer",
+        "cp": 50,
+        "pdf_affiche": "affiche st pair.pdf",
+        "pdf_playliste": "saint pair.pdf",
+        "texte": "playliste st pair.pdf"
+    },
+    {
+        "domicile": 1,
+        "date": "15/12/2019",
+        "club": "DML Laillé",
+        "ville": "Laillé",
+        "cp": 35,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal du pére noél"
+    },
+    {
+        "domicile": 1,
+        "date": "21/03/2020",
+        "club": "DML Laillé",
+        "ville": "Laillé",
+        "cp": 35,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal annuel"
+    },
+    {
+        "domicile": 1,
+        "date": "16/05/2020",
+        "club": "Au coeur du don",
+        "ville": "Laillé",
+        "cp": 35,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal Cd country"
+    },
+    {
+        "domicile": 0,
+        "date": "05/10/2019",
+        "club": "Plescop Country danse",
+        "ville": "Plescop",
+        "cp": 56,
+        "pdf_affiche": "plescop.pdf",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 0,
+        "date": "09/11/2019",
+        "club": "NS Country Isigny Carentan",
+        "ville": "Isigny sur mer",
+        "cp": 14,
+        "pdf_affiche": "ns country isigny.pdf",
+        "pdf_playliste": "",
+        "texte": "Bal Cd"
+    },
+    {
+        "domicile": 0,
+        "date": "24/08/2019",
+        "club": "Niaflais country danse",
+        "ville": "Saint Fort",
+        "cp": 53,
+        "pdf_affiche": "affiche St fort.pdf",
+        "pdf_playliste": "Playliste St fort.pdf",
+        "texte": "Festival Country Stage  et concert"
+    },
+    {
+        "domicile": 0,
+        "date": "16/08/2019",
+        "club": "Festi Danses country Vendée",
+        "ville": "Grand'Landes",
+        "cp": 85,
+        "pdf_affiche": "Grand Landes.pdf",
+        "pdf_playliste": "Playliste Grand landes.pdf",
+        "texte": "Grand'Landes 16-17-18 aout"
+    },
+    {
+        "domicile": 0,
+        "date": "18/03/2020",
+        "club": "Castel country Dancers 35",
+        "ville": "Chateaugiron",
+        "cp": 35,
+        "pdf_affiche": "Blue night country.pdf",
+        "pdf_playliste": "",
+        "texte": "Bal Concert Blue night Country"
+    },
+    {
+        "domicile": 0,
+        "date": "14/08/2019",
+        "club": "Anyway country",
+        "ville": "Touques",
+        "cp": 14,
+        "pdf_affiche": "Touques.pdf",
+        "pdf_playliste": "touques playliste.pdf",
+        "texte": "Bal Concert Kevin Buckley"
+    },
+    {
+        "domicile": 0,
+        "date": "21/09/2019",
+        "club": "Good old Days",
+        "ville": "Chateauroux",
+        "cp": 36,
+        "pdf_affiche": "Festival vintage et coutry.pdf",
+        "pdf_playliste": "",
+        "texte": "Festival Vintage et country"
+    },
+    {
+        "domicile": 0,
+        "date": "23/05/2020",
+        "club": "Caen Country France",
+        "ville": "Verson",
+        "cp": 14,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal et stage avec Rob Fowler"
+    },
+    {
+        "domicile": 0,
+        "date": "21/09/2019",
+        "club": "Des Etoiles dans les yeux",
+        "ville": "Saint Denis de Méré",
+        "cp": 14,
+        "pdf_affiche": "des etoiles dans les yeux.pdf",
+        "pdf_playliste": "kimmy.pdf",
+        "texte": "Bal country animé par coco"
+    },
+    {
+        "domicile": 0,
+        "date": "12/10/2019",
+        "club": "honky tonk",
+        "ville": "Troarn",
+        "cp": 14,
+        "pdf_affiche": "honkytonk.pdf",
+        "pdf_playliste": "",
+        "texte": "Week end country"
+    },
+    {
+        "domicile": 0,
+        "date": "24/08/2019",
+        "club": "Saint Méloir country Rando",
+        "ville": "",
+        "cp": 35,
+        "pdf_affiche": "saint coulomb.pdf",
+        "pdf_playliste": "Saint coulomb 2.pdf",
+        "texte": "Danse Partner puis Bal country"
+    },
+    {
+        "domicile": 0,
+        "date": "31/08/2019",
+        "club": "Des Lantotiag Dancers",
+        "ville": "Langonnet",
+        "cp": 56,
+        "pdf_affiche": "Langonnet.pdf",
+        "pdf_playliste": "Langonnet2.pdf",
+        "texte": "Bal Country animé par Edith"
+    },
+    {
+        "domicile": 0,
+        "date": "09/05/2020",
+        "club": "Country Rock Dancers",
+        "ville": "Ploneis",
+        "cp": 29,
+        "pdf_affiche": "stage Esmeralda.pdf",
+        "pdf_playliste": "",
+        "texte": "Esmeralda Van Del pol Stage et bal Eric Lecardonnel"
+    },
+    {
+        "domicile": 0,
+        "date": "19/10/2019",
+        "club": "",
+        "ville": "Baud",
+        "cp": 56,
+        "pdf_affiche": "Baud.pdf",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 0,
+        "date": "14/12/2019",
+        "club": "Caen Country Dance",
+        "ville": "Soupont St Quentin",
+        "cp": 14,
+        "pdf_affiche": "Didier Beaumon caen.pdf",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 0,
+        "date": "19/12/2019",
+        "club": "Mill's Valley",
+        "ville": "Bohars",
+        "cp": 29,
+        "pdf_affiche": "Mills valley.pdf",
+        "pdf_playliste": "",
+        "texte": "Worshops Aranud Marraffa et Bal"
+    },
+    {
+        "domicile": 0,
+        "date": "12/10/2019",
+        "club": "Country Oisseau",
+        "ville": "Oisseau",
+        "cp": 53,
+        "pdf_affiche": "ACO",
+        "pdf_playliste": "aco.pdf",
+        "texte": "10 ans"
+    },
+    {
+        "domicile": 0,
+        "date": "16/11/2019",
+        "club": "Ok St James",
+        "ville": "St James",
+        "cp": 50,
+        "pdf_affiche": "OK st James.pdf",
+        "pdf_playliste": "",
+        "texte": "15 Ans Ok St James Worshop Severine Fillion et Chrystél Durand et concert Rusty Leg"
+    },
+    {
+        "domicile": 0,
+        "date": "12/10/2019",
+        "club": "Lands country Dancers",
+        "ville": "Lessay",
+        "cp": 50,
+        "pdf_affiche": "Lands country.pdf",
+        "pdf_playliste": "",
+        "texte": "Bal annuel"
+    },
+    {
+        "domicile": 0,
+        "date": "12/10/2019",
+        "club": "west country dance",
+        "ville": "Mareuil S/Lay",
+        "cp": 85,
+        "pdf_affiche": "west country dance.pdf",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 0,
+        "date": "12/10/2019",
+        "club": "country walk",
+        "ville": "Sens de bretagne",
+        "cp": 35,
+        "pdf_affiche": "Martha fields.pdf",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 0,
+        "date": "05/10/2019",
+        "club": "Welcom in country",
+        "ville": "Le Bosc du theil",
+        "cp": 27,
+        "pdf_affiche": "welcm in country.pdf",
+        "pdf_playliste": "",
+        "texte": "Bal Cd"
+    },
+    {
+        "domicile": 0,
+        "date": "26/10/2019",
+        "club": "Country Rock dancers",
+        "ville": "Ploenis",
+        "cp": 29,
+        "pdf_affiche": "fred whitehouse.pdf",
+        "pdf_playliste": "",
+        "texte": "Stage Line Fred Whitehouse"
+    },
+    {
+        "domicile": 0,
+        "date": "02/11/2019",
+        "club": "Western Dance",
+        "ville": "St Martin des entrées",
+        "cp": 14,
+        "pdf_affiche": "western dance.pdf",
+        "pdf_playliste": "",
+        "texte": "5 ans"
+    },
+    {
+        "domicile": 0,
+        "date": "12/10/2019",
+        "club": "Footloose Echemiré",
+        "ville": "Bazouges sur Loir",
+        "cp": 72,
+        "pdf_affiche": "echemire .pdf",
+        "pdf_playliste": "",
+        "texte": "Bal Cd"
+    },
+    {
+        "domicile": 0,
+        "date": "31/08/2019",
+        "club": "Country Igoville",
+        "ville": "Igoville",
+        "cp": 27,
+        "pdf_affiche": "country igoville.pdf",
+        "pdf_playliste": "playliste Igoville.pdf",
+        "texte": "Bal Cd"
+    },
+    {
+        "domicile": 0,
+        "date": "25/01/2020",
+        "club": "Kreisker Country",
+        "ville": "St Avé",
+        "cp": 56,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 0,
+        "date": "09/02/2020",
+        "club": "Le Tronchet",
+        "ville": "Le Tronchet",
+        "cp": 50,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Alain et Eliane"
+    },
+    {
+        "domicile": 0,
+        "date": "01/03/2020",
+        "club": "Wesco Lida",
+        "ville": "St Germain Du corbeis",
+        "cp": 61,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal CD"
+    },
+    {
+        "domicile": 0,
+        "date": "11/04/2020",
+        "club": "Amlos",
+        "ville": "Ferté Macé",
+        "cp": 61,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal Cd guy Wattez"
+    },
+    {
+        "domicile": 0,
+        "date": "30/05/2020",
+        "club": "Eagles Line Dancers",
+        "ville": "Coétmieux",
+        "cp": 22,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Repas et Bal annuel"
+    },
+    {
+        "domicile": 0,
+        "date": "04/04/2020",
+        "club": "Lanv'Line",
+        "ville": "Lanvallay",
+        "cp": 22,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal Line et Country animé par Virginie"
+    },
+    {
+        "domicile": 0,
+        "date": "14/11/2020",
+        "club": "",
+        "ville": "Moreac",
+        "cp": 56,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Concert Rusty Legs"
+    },
+    {
+        "domicile": 0,
+        "date": "14/12/2019",
+        "club": "Breiz Cowboy",
+        "ville": "Chevaigné",
+        "cp": 35,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal Cd"
+    },
+    {
+        "domicile": 0,
+        "date": "11/01/2020",
+        "club": "West Rennes",
+        "ville": "Laillé",
+        "cp": 35,
+        "pdf_affiche": "lilly west.pdf",
+        "pdf_playliste": "",
+        "texte": "Concert Lilly West"
+    },
+    {
+        "domicile": 0,
+        "date": "30/11/2020",
+        "club": "Appalooa Country",
+        "ville": "Gévezé",
+        "cp": 35,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal cd"
+    },
+    {
+        "domicile": 0,
+        "date": "08/02/2020",
+        "club": "Country St Perreux",
+        "ville": "Redon",
+        "cp": 35,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal Country animé par Mandy"
+    },
+    {
+        "domicile": 0,
+        "date": "28/09/2019",
+        "club": "Middle Ouest 35",
+        "ville": "Chavagne",
+        "cp": 35,
+        "pdf_affiche": "chavagne.pdf",
+        "pdf_playliste": "",
+        "texte": "Bal animé par christine"
+    },
+    {
+        "domicile": 0,
+        "date": "06/10/2019",
+        "club": "Aucaleuc",
+        "ville": "Aucaleuc",
+        "cp": 22,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Journée américaine etshow musical et bal country"
+    },
+    {
+        "domicile": 0,
+        "date": "26/10/2019",
+        "club": "Country road Cesson",
+        "ville": "Cesson Sévigné",
+        "cp": 35,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": ""
+    },
+    {
+        "domicile": 0,
+        "date": "03/11/2019",
+        "club": "Pluduno",
+        "ville": "Pluduno",
+        "cp": 22,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal animé par Martine et Olivier"
+    },
+    {
+        "domicile": 0,
+        "date": "20/10/2019",
+        "club": "Breiz Cowboy",
+        "ville": "Chevaigné",
+        "cp": 35,
+        "pdf_affiche": "",
+        "pdf_playliste": "",
+        "texte": "Bal country au profit de Tyllia"
+    },
+    {
+        "domicile": 0,
+        "date": "30/11/2019",
+        "club": "Caen Country Dance",
+        "ville": "",
+        "cp": 14,
+        "pdf_affiche": "Caen Country dance.pdf",
+        "pdf_playliste": "",
+        "texte": "Workshop Jeff  Kamps et Heather Barton Bal Country animé par Coco et Alain"
+    },
+    {
+        "domicile": 0,
+        "date": "23/11/2019",
+        "club": "The partners",
+        "ville": "Country side Studio",
+        "cp": 14,
+        "pdf_affiche": "the partners.pdf",
+        "pdf_playliste": "",
+        "texte": "Bal concert The Partners"
+    },
+    {
+        "domicile": 0,
+        "date": "04/04/2020",
+        "club": "Blue cat dance",
+        "ville": "Courseulles sur mer",
+        "cp": 14,
+        "pdf_affiche": "blue cat dance.pdf",
+        "pdf_playliste": "",
+        "texte": "Bal country animé par Patricia"
+    },
+    {
+        "domicile": 0,
+        "date": "09/05/2020",
+        "club": "Riva country Dance",
+        "ville": "Ranville",
+        "cp": 14,
+        "pdf_affiche": "Riva country dance.pdf",
+        "pdf_playliste": "",
+        "texte": "Bal concert Crazy Pug"
+    },
+    {
+        "domicile": 0,
+        "date": "30/11/2020",
+        "club": "American Dream 35",
+        "ville": "Bédée",
+        "cp": 35,
+        "pdf_affiche": "Niels poulsen.pdf",
+        "pdf_playliste": "",
+        "texte": "Workshops Niels poulsen"
+    },
+    {
+        "domicile": 0,
+        "date": "19/10/2019",
+        "club": "Salon Country",
+        "ville": "Amiens",
+        "cp": 80,
+        "pdf_affiche": "salon country.pdf",
+        "pdf_playliste": "",
+        "texte": "Festival country"
+    },
+    {
+        "domicile": 0,
+        "date": "28/03/2020",
+        "club": "Salon country",
+        "ville": "Le Mans",
+        "cp": 72,
+        "pdf_affiche": "salon country.pdf",
+        "pdf_playliste": "",
+        "texte": "Festival country"
+    }
+]

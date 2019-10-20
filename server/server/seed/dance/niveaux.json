@@ -1,0 +1,16 @@
+[{
+        "index": 0,
+        "name": "Débutant",
+        "logo": "fas fa-dice-one"
+    },
+    {
+        "index": 1,
+        "name": "Novice",
+        "logo": "fas fa-dice-two"
+    },
+    {
+        "index": 2,
+        "name": "Intermédiaire",
+        "logo": "fas fa-dice-three"
+    }
+]
