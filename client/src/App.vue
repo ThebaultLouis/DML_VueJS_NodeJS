@@ -33,14 +33,13 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import Footbar from "@/components/Footbar";
 
 export default {
   name: "",
   data: () => ({}),
   components: {
-    Navbar,
     Footbar
   }
 };

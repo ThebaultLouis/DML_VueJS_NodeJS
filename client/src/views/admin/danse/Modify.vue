@@ -109,7 +109,7 @@ export default {
             this.$noty.warning("La danse n'a pas été modifié");
           });
       } else {
-        this.danse.pdf = "";
+        // this.danse.pdf = "";
         Axios.patch(`${config.apiUrl}/danses/${this.danse._id}`, this.danse)
           .then(response => {
             this.loading = false;

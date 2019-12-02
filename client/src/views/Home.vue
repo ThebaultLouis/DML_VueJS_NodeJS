@@ -21,11 +21,22 @@
         </v-img>
       </div>
       <div class="hidden-md-and-up">
-        <div style="margin-bottom:-18px;">
-          <Navbarxs></Navbarxs>
+        <!-- <img src="accueil/picto/page_accueil.png" alt /> -->
+        <div class="bg" style="width:100%">
+          <Navbarxs style="position: relative" :isTransparent="true"></Navbarxs>
+          <v-layout align-center justify-center class="white--text" full-width>
+            <img src="Logo/utils/logo.png" height="150" style="margin-top:20px;margin-left:60px;" />
+            <!-- <div class="bg-2"></div> -->
+            <div style="height:50px"></div>
+          </v-layout>
         </div>
-        <v-layout column align-center justify-center>
+
+        <!-- <v-img src="accueil/picto/page_accueil.png" width="100%">
+        </v-img>-->
+        <!-- <v-layout column align-center justify-center>
           <v-img src="accueil/picto/page_accueil.png" width="100%">
+            <v-layout justify-start>
+            </v-layout>
             <v-layout column align-center justify-center class="white--text" full-width>
               <img
                 src="Logo/utils/logo.png"
@@ -36,7 +47,7 @@
               <div style="height:50px"></div>
             </v-layout>
           </v-img>
-        </v-layout>
+        </v-layout>-->
       </div>
 
       <div id="debut">
@@ -266,6 +277,25 @@ export default {
 };
 </script>
 <style scoped>
+.bg {
+  width: 100%;
+  height: 300px;
+  background-image: url("/accueil/picto/page_accueil.png");
+  /* background-size: contain; */
+  background-size: cover;
+  /* background-size: auto; */
+}
+.bg-2 {
+  /* margin-top: -30px;
+  margin-left: 30px; */
+  /* right: 10px; */
+  /* position: relative; */
+  width: 100%;
+  height: auto;
+  height: 150px;
+  background-image: url("/Logo/utils/logo.png");
+  background-size: contain;
+}
 #home {
   background-color: "grey";
 }

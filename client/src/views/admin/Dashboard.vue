@@ -33,78 +33,6 @@
         >Bals</v-btn>
       </v-layout>
     </v-flex>
-    <!-- <v-list>
-      <v-list-tile>
-        <v-list-title>Danses</v-list-title>
-      </v-list-tile>
-    </v-list>-->
-    <!-- <v-list>
-      <v-list-tile></v-list-tile>
-    </v-list>-->
-    <!-- <v-card height="55px">
-      <v-bottom-nav :active.sync="bottomNav" :color="color" :value="true" absolute dark shift>
-        <v-btn v-on:click.native="selectionChange(selectionArray[0])" dark>
-          <span>Général</span>
-          <v-icon>home</v-icon>
-        </v-btn>
-
-        <v-btn v-on:click.native="selectionChange(selectionArray[1])" dark>
-          <span>Danse</span>
-          <v-icon>music_note</v-icon>
-        </v-btn>
-
-        <v-btn v-on:click.native="selectionChange(selectionArray[2])" dark>
-          <span>Manifestation</span>
-          <v-icon>fa-calendar-alt</v-icon>
-        </v-btn>
-
-        <v-btn v-on:click.native="selectionChange(selectionArray[3])" dark>
-          <span>Révision</span>
-          <v-icon>fa-graduation-cap</v-icon>
-        </v-btn>
-
-        <v-btn v-on:click.native="selectionChange(selectionArray[4])" dark>
-          <span>Niveaux</span>
-          <v-icon>fa-layer-group</v-icon>
-        </v-btn>
-
-        <v-btn v-on:click.native="logout()" dark v-if="logged()">
-          <span>Admin</span>
-          <v-icon>fa-power-off</v-icon>
-        </v-btn>
-      </v-bottom-nav>
-    </v-card>-->
-    <!-- <div v-if="selectionArray[0] === selection">
-      <DanseDashboard class="mt-4" v-on:modifyDanceEvent="selectDanse($event)"></DanseDashboard>
-      <ManifestationDashboard
-        class="mt-4"
-        v-on:modifyManifestationEvent="selectManifestation($event)"
-      ></ManifestationDashboard>
-      <RevisionDashboard class="mt-4" v-on:modifyRevisionEvent="selectRevision($event)"></RevisionDashboard>
-      <NiveauDashboard class="mt-4" v-on:modifyNiveauEvent="selectNiveau($event)"></NiveauDashboard>
-    </div>
-
-    <div v-if="selectionArray[1] === selection">
-      <DanseForm :danceToModify="selectedDanse" v-on:danceModified="selectedDanse = {}"></DanseForm>
-    </div>
-
-    <div v-if="selectionArray[2] === selection">
-      <ManifForm
-        :manifestationToModify="selectedManifestation"
-        v-on:manifestationModified="selectedManifestation = {}"
-      ></ManifForm>
-    </div>
-
-    <div v-if="selectionArray[3] === selection">
-      <RevisionForm
-        :revisionToModify="selectedRevision"
-        v-on:revisionModified="selectedRevision = {}"
-      ></RevisionForm>
-    </div>
-
-    <div v-if="selectionArray[4] === selection">
-      <NiveauForm :niveauToModify="selectedNiveau" v-on:niveauModified="selectedNiveau = {}"></NiveauForm>
-    </div>-->
   </div>
 </template>
 <script>
@@ -124,11 +52,7 @@ import NiveauForm from "@/components/admin/NiveauForm";
 
 export default {
   name: "",
-  mounted() {
-    // this.getNiveaux()
-    // this.getManifestations()
-    // this.getDanses()
-  },
+  mounted() {},
   components: {
     Navbar,
     DanseDashboard,

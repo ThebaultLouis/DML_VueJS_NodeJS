@@ -2,7 +2,21 @@
   <div id>
     <Navbar></Navbar>
     <h1 class="text-xs-center my-3 display-2 orange--text">Administration</h1>
-    <div data-aos="fade-right">
+    <v-layout my-4>
+      <v-flex xs12 sm6 offset-sm3>
+        <v-card class="ma-4 orange lighten-4">
+          <v-form class="pa-2" lazy-validation>
+            <v-text-field v-model="username" label="Nom d'utilisateur" required></v-text-field>
+
+            <v-text-field v-model="password" type="password" label="Mot de passe" required></v-text-field>
+            <div class="text-xs-right">
+              <v-btn v-on:click.native="login()" class="amber darken-1 text-xs-right">Validate</v-btn>
+            </div>
+          </v-form>
+        </v-card>
+      </v-flex>
+    </v-layout>
+    <!-- <div data-aos="fade-right">
       <v-img height="100%" aspect-ratio="2" src="/danse_country.jpg">
         <v-layout my-4>
           <v-flex xs12 sm5 offset-sm0>
@@ -18,7 +32,7 @@
           </v-flex>
         </v-layout>
       </v-img>
-    </div>
+    </div>-->
     <div style="margin-top:120px;"></div>
   </div>
 </template>
@@ -54,7 +68,7 @@ export default {
         .then(response => {
           this.loading = false;
           this.$noty.success("Correctement identifié");
-          console.log(response);
+          // console.log(response);
           localStorage.setItem(
             "auth",
             JSON.stringify(response.headers["x-auth"])

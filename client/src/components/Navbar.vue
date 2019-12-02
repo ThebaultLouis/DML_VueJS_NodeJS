@@ -1,10 +1,14 @@
 <template>
   <div>
     <template>
-      <div class="brown mb-5">
+      <div class="mb-5" :class="isTransparent ? 'transparent' : 'brown'">
         <v-container class="pt-0 pa-0">
           <v-navigation-drawer v-model="drawer" :disable-resize-watcher="true" fixed app>
-            <v-img src="/Logo/utils/logo.svg" class="brown" height="200"></v-img>
+            <v-img
+              src="/Logo/utils/logo.svg"
+              :class="isTransparent ? 'transparent' : 'brown'"
+              height="200"
+            ></v-img>
 
             <v-divider class="amber darken-2"></v-divider>
 
@@ -108,30 +112,11 @@
                 </v-list-tile>
               </v-list-group>
             </v-list>
-
-            <!-- <v-list dense class="amber darken-1">
-              <v-list-tile
-                v-for="page in pages"
-                :key="page.icon"
-                v-on:click="$router.push(page.redirect)"
-                class="amber darken-1 my-3"
-              >
-                <v-list-tile-action>
-                  <v-icon>{{page.icon}}</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title class="headline">{{page.name}}</v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>-->
           </v-navigation-drawer>
 
           <v-toolbar color="brown" dark flat>
-            <!-- <v-toolbar color="transparent" flat> -->
             <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-md-and-up"></v-toolbar-side-icon>
-            <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-            <v-toolbar-title class="hidden-md-and-up">DML Laillé</v-toolbar-title>
-            <!-- <v-img  class="hidden-md-and-up" src="/Logo/logo.svg"  contain height="100"></v-img> -->
+            <v-toolbar-title v-if="isTransparent" class="hidden-md-and-up">DML Laillé</v-toolbar-title>
             <v-spacer></v-spacer>
 
             <v-toolbar-items class="hidden-sm-and-down">
@@ -215,6 +200,7 @@ export default {
   data: () => ({
     bottomNav: 0,
     drawer: false,
+    props: ["isTransparent"],
     pages: [
       {
         name: "Accueil",

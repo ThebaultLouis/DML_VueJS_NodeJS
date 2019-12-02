@@ -60,7 +60,7 @@ const actions = {
         commit,
         state
     }) {
-        if (!state.CoursWereFetched) {
+        if (!state.coursWereFetched) {
             Axios.get(`${config.apiUrl}/cours`, {
                 params: {
                     type: 0
