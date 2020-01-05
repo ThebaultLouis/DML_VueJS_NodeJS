@@ -72,6 +72,7 @@
 <script>
 import Navbar from "@/components/navbar/general/Navbar";
 import { mapState } from "vuex";
+import authHeader from "@/store/modules/admin/authHeader";
 
 import Axios from "axios";
 import config from "@/config.js";
@@ -154,7 +155,8 @@ export default {
       }
       Axios.patch(
         `${config.apiUrl}/manifestations/${this.manifestation._id}`,
-        this.manifestation
+        this.manifestation,
+        authHeader()
       ).then(manif => {
         this.loading = false;
         this.$noty.success("La manifestation a bien été ajouté");

@@ -52,6 +52,7 @@
 <script>
 import Navbar from "@/components/navbar/general/Navbar";
 import { mapState } from "vuex";
+import authHeader from "@/store/modules/admin/authHeader";
 
 import Axios from "axios";
 import config from "@/config.js";
@@ -119,16 +120,18 @@ export default {
           })
           .catch(e => console.log(e));
       }
-      Axios.post(`${config.apiUrl}/bals`, this.bal).then(manif => {
-        this.bal = {
-          name: "",
-          doneAt: new Date().toISOString().substr(0, 10),
-          photos: []
-        };
-        this.files = [];
-        this.loading = false;
-        this.$noty.success("La manifestation a bien été ajouté");
-      });
+      Axios.post(`${config.apiUrl}/bals`, this.bal, authHeader()).then(
+        manif => {
+          this.bal = {
+            name: "",
+            doneAt: new Date().toISOString().substr(0, 10),
+            photos: []
+          };
+          this.files = [];
+          this.loading = false;
+          this.$noty.success("La manifestation a bien été ajouté");
+        }
+      );
     }
   }
 };

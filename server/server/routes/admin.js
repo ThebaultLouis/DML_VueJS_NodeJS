@@ -1,27 +1,50 @@
-const express = require('express')
-const router = express.Router()
-const {mongoose} = require('./../db/mongoose')
-const _ = require('lodash')
-const {ObjectID} = require('mongodb')
+const express = require("express");
+const router = express.Router();
+const { mongoose } = require("./../db/mongoose");
+const _ = require("lodash");
+const { ObjectID } = require("mongodb");
 
-var {User} = require('./../models/user')
-var {authenticate} = require('./../middleware/authenticate')
+const jwt = require("jsonwebtoken");
+const bcrypt = require("bcryptjs");
 
-router.post('/login', (req, res) => {
-  var body = _.pick(req.body, ['username', 'password'])
+var { User } = require("./../models/user");
+var { authenticate } = require("./../middleware/authenticate");
 
-  User.findByCredentials(body.username, body.password).then(user => {
-      res.status(200).header('x-auth', user.tokens[0].token).send(user)
+router.post("/login", (req, res) => {
+  var body = _.pick(req.body, ["username", "password"]);
 
-  }).catch(e => {
-    res.status(400).send(e)
-  })
-})
+  User.findByCredentials(body.username, body.password)
+    .then(user => {
+      var access = "auth";
+      var token = jwt.sign(
+        { _id: user._id.toHexString(), access },
+        process.env.JWT_SECRET,
+        { expiresIn: "1w" }
+      );
+      // .toString();
+      // user.token = token;
 
-router.delete('/login', authenticate, (req, res) => {
-  req.user.removeToken(req.token).then(() => {
-    res.status(200).send()
-  }).catch(e => res.status(400).send())
-})
+      res
+        .status(200)
+        // .header("x-auth", token)
+        .send({ user, token });
+    })
+    .catch(e => {
+      res.status(400).send(e);
+    });
+});
 
-module.exports = router
+router.get("/isAlive", authenticate, (req, res) => {
+  res.send(200);
+});
+
+// router.delete("/login", authenticate, (req, res) => {
+//   req.user
+//     .removeToken(req.token)
+//     .then(() => {
+//       res.status(200).send();
+//     })
+//     .catch(e => res.status(400).send());
+// });
+
+module.exports = router;

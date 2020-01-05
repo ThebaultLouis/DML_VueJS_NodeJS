@@ -40,6 +40,7 @@
 <script>
 import Axios from "axios";
 import config from "@/config.js";
+import authHeader from "@/store/modules/admin/authHeader";
 
 import Navbar from "@/components/navbar/general/Navbar";
 
@@ -94,7 +95,11 @@ export default {
           .then(res => {
             this.danse.pdf = res.data.secure_url;
 
-            Axios.post(`${config.apiUrl}/danses`, this.danse).then(response => {
+            Axios.post(
+              `${config.apiUrl}/danses`,
+              this.danse,
+              authHeader()
+            ).then(response => {
               this.loading = false;
               this.$noty.success("La danse a bien été ajouté");
               this.danse = {
@@ -111,7 +116,7 @@ export default {
           });
       } else {
         this.danse.pdf = "";
-        Axios.post(`${config.apiUrl}/danses`, this.danse)
+        Axios.post(`${config.apiUrl}/danses`, this.danse, authHeader())
           .then(response => {
             this.loading = false;
             this.$noty.success("La danse a bien été ajouté");

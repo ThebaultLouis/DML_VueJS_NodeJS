@@ -42,6 +42,7 @@
 import Axios from "axios";
 import config from "@/config.js";
 import { mapState } from "vuex";
+import authHeader from "@/store/modules/admin/authHeader";
 
 import Navbar from "@/components/navbar/general/Navbar";
 
@@ -96,7 +97,8 @@ export default {
 
             Axios.patch(
               `${config.apiUrl}/danses/${this.danse._id}`,
-              this.danse
+              this.danse,
+              authHeader()
             ).then(response => {
               this.loading = false;
               this.$noty.success("La danse a bien été modifié");
@@ -110,7 +112,11 @@ export default {
           });
       } else {
         // this.danse.pdf = "";
-        Axios.patch(`${config.apiUrl}/danses/${this.danse._id}`, this.danse)
+        Axios.patch(
+          `${config.apiUrl}/danses/${this.danse._id}`,
+          this.danse,
+          authHeader()
+        )
           .then(response => {
             this.loading = false;
             this.$noty.success("La danse a bien été ajouté");

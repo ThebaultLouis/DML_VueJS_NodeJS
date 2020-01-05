@@ -69,6 +69,10 @@
   </div>
 </template>
 <script>
+import Axios from "axios";
+import config from "@/config.js";
+import authHeader from "../../../store/modules/admin/authHeader";
+
 import drawer from "./Drawer";
 export default {
   components: {
@@ -76,17 +80,32 @@ export default {
   },
   props: ["isTransparent"],
   data: () => ({
-    drawer: false
+    drawer: false,
+    admin: false
   }),
+
   computed: {
     logged() {
-      return localStorage.getItem("auth") ? true : false;
+      // return localStorage.getItem("auth") ? true : false;
+      return this.admin;
     }
   },
   methods: {
     logout() {
       localStorage.removeItem("auth");
       this.$router.push("/");
+    }
+  },
+  beforeMount() {
+    var token = localStorage.getItem("auth");
+    if (token) {
+      Axios.get(`${config.apiUrl}/admin/isAlive`, authHeader())
+        .then(() => {
+          this.admin = true;
+        })
+        .catch(e => {
+          localStorage.removeItem("auth");
+        });
     }
   }
 };

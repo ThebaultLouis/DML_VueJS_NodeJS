@@ -68,17 +68,15 @@ export default {
         .then(response => {
           this.loading = false;
           this.$noty.success("Correctement identifié");
-          // console.log(response);
-          localStorage.setItem(
-            "auth",
-            JSON.stringify(response.headers["x-auth"])
-          );
+          // console.log(response.data.token);
+          localStorage.setItem("auth", response.data.token);
           this.$root.auth = response.data.data;
 
           this.$router.push({ path: "/admin/dashboard" });
         })
         .catch(e => {
           this.loading = false;
+          this.password = "";
         });
     }
   }

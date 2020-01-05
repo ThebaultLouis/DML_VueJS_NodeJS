@@ -119,11 +119,6 @@ export default {
         icon: "fa-users",
         redirect: "/revisions"
       }
-      // {
-      //   name: "Révision",
-      //   icon: "fa-graduation-cap",
-      //   redirect: "/revisions"
-      // },
     ]
   }),
   props: {

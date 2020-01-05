@@ -70,6 +70,7 @@
 <script>
 import Navbar from "@/components/navbar/general/Navbar";
 import { mapState } from "vuex";
+import authHeader from "@/store/modules/admin/authHeader";
 
 import Axios from "axios";
 import config from "@/config.js";
@@ -151,21 +152,23 @@ export default {
           })
           .catch(e => console.log(e));
       }
-      Axios.post(`${config.apiUrl}/manifestations`, this.manifestation).then(
-        manif => {
-          this.loading = false;
-          this.$noty.success("La manifestation a bien été ajouté");
-          this.manifestation = {
-            domicile: false,
-            doneAt: 0,
-            city: "",
-            zipcode: "",
-            club: "",
-            pdfAffiche: "",
-            pdfPlaylist: ""
-          };
-        }
-      );
+      Axios.post(
+        `${config.apiUrl}/manifestations`,
+        this.manifestation,
+        authHeader()
+      ).then(manif => {
+        this.loading = false;
+        this.$noty.success("La manifestation a bien été ajouté");
+        this.manifestation = {
+          domicile: false,
+          doneAt: 0,
+          city: "",
+          zipcode: "",
+          club: "",
+          pdfAffiche: "",
+          pdfPlaylist: ""
+        };
+      });
     }
   }
 };
