@@ -1,8 +1,8 @@
-import Axios from "axios";
-import config from "@/config.js";
-import authHeader from "./authHeader";
+import Axios from "axios"
+import config from "@/config.js"
+import authHeader from "./authHeader"
 
-const getters = {};
+const getters = {}
 const state = {
   fetchedManifestations: [],
   manifestations: [],
@@ -31,87 +31,87 @@ const state = {
     type: 0,
     date: null
   }
-};
+}
 const mutations = {
   //
-  setFetchedManifestations(state, manifestations) {
-    state.fetchedManifestations = manifestations;
+  setFetchedManifestations (state, manifestations) {
+    state.fetchedManifestations = manifestations
   },
-  setManifestations(state, manifestations) {
-    state.manifestations = manifestations;
+  setManifestations (state, manifestations) {
+    state.manifestations = manifestations
   },
-  setLoading(state, loading) {
-    state.loading = loading;
+  setLoading (state, loading) {
+    state.loading = loading
   },
   // Filter
-  findManifestationById(state, id) {
-    state.manifestation = state.manifestations.find(manif => manif._id == id);
+  findManifestationById (state, id) {
+    state.manifestation = state.manifestations.find(manif => manif._id == id)
   },
-  setFilterType(state, type) {
-    state.filter.type = type;
+  setFilterType (state, type) {
+    state.filter.type = type
   },
-  setFilterDate(state, date) {
-    state.filter.date = date;
+  setFilterDate (state, date) {
+    state.filter.date = date
   },
-  filterManifestationsByDate(state) {
+  filterManifestationsByDate (state) {
     state.manifestations = state.filter.date
       ? state.manifestations.filter(
-          manifestations =>
-            manifestations.doneAt
-              .split("-")
-              .slice(0, 2)
-              .join("-") == state.filter.date
-        )
-      : state.manifestations.slice();
+        manifestations =>
+          manifestations.doneAt
+            .split("-")
+            .slice(0, 2)
+            .join("-") == state.filter.date
+      )
+      : state.manifestations.slice()
   },
-  filterManifestationsByType(state) {
+  filterManifestationsByType (state) {
     switch (state.filter.type) {
       case 0:
-        state.manifestations = state.manifestations.slice();
-        break;
+        state.manifestations = state.manifestations.slice()
+        break
       case 1:
         state.manifestations = state.manifestations.filter(
           manif => manif.domicile
-        );
-        break;
+        )
+        break
       case 2:
         state.manifestations = state.manifestations.filter(
           manif => !manif.domicile
-        );
+        )
     }
   }
-};
+}
 const actions = {
-  async fetchManifestations({ commit }) {
-    commit("setLoading", true);
-    Axios.get(`${config.apiUrl}/manifestations`).then(res => {
-      commit("setFetchedManifestations", res.data);
-      commit("setManifestations", res.data);
-      commit("setLoading", false);
-    });
+  async fetchManifestations ({ commit }) {
+    commit("setLoading", true)
+    Axios.get(`${config.apiUrl}/manifestations/admin`).then(res => {
+      commit("setFetchedManifestations", res.data)
+      commit("setManifestations", res.data)
+      commit("setLoading", false)
+    })
   },
-  async deleteManifestation({ commit, dispatch }, id) {
-    commit("setLoading", true);
+  async deleteManifestation ({ commit, dispatch }, id) {
+    commit("setLoading", true)
     Axios.delete(`${config.apiUrl}/manifestations/${id}`, authHeader())
       .then(() => {
-        dispatch("fetchManifestations");
+        dispatch("fetchManifestations")
       })
-      .catch(e => console.log(e));
+      .catch(e => console.log(e))
   },
-  filterManifestations({ commit, state }) {
-    commit("setManifestations", state.fetchedManifestations);
-    commit("filterManifestationsByDate");
-    commit("filterManifestationsByType");
+  filterManifestations ({ commit, state }) {
+    commit("setManifestations", state.fetchedManifestations)
+    commit("filterManifestationsByDate")
+    commit("filterManifestationsByType")
   },
-  filterManifestationsByDate({ commit, dispatch }, date) {
-    commit("setFilterDate", date);
-    dispatch("filterManifestations");
+  filterManifestationsByDate ({ commit, dispatch }, date) {
+    commit("setFilterDate", date)
+    dispatch("filterManifestations")
   },
-  filterManifestationsByType({ commit, dispatch }, type) {
-    commit("setFilterType", type);
-    dispatch("filterManifestations");
+  filterManifestationsByType ({ commit, dispatch }, type) {
+    commit("setFilterType", type)
+    dispatch("filterManifestations")
   }
-};
+}
 
 export default {
   namespaced: true,
@@ -119,4 +119,4 @@ export default {
   getters,
   mutations,
   actions
-};
+}

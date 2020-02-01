@@ -53,13 +53,29 @@ router.get("/", (req, res) => {
     }
   };
   var now = new Date(Date.now());
-  now = now.getFullYear() + "-" + now.getMonth() + 1 + "-00";
-  // console.log(now);
+  var month = now.getMonth() + 1;
+  month = month >= 10 ? month : "0" + month
+  now = now.getFullYear() + "-" + month + "-00";
+
   Manifestation.find({ doneAt: { $gt: now } }, null, param)
     .then(manifestations => {
       res.send(manifestations);
     })
     .catch(e => res.status(400).send(e));
+});
+
+router.get("/admin", (req, res) => {
+  param = {
+    sort: {
+      doneAt: 1
+    }
+  }
+ 
+  Manifestation.find({}, null, param)
+    .then(manifestations => {
+      res.send(manifestations)
+    })
+    .catch(e => res.status(400).send(e))
 });
 
 router.delete("/:id", authenticate, (req, res) => {
